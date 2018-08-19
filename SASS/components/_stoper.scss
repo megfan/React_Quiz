@@ -1,0 +1,13 @@
+#stopwatch{
+  font-size: 1.3rem;
+  font-weight: lighter;
+  letter-spacing: 0.3rem;
+  color: $color-blue;
+  width: 10vw;
+  margin-left: 58vw;
+  margin-top: 6vh;
+  height: 3vh;
+  & span{
+    float: left;
+  }
+}

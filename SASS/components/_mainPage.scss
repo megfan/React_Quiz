@@ -1,0 +1,50 @@
+.app{
+  margin-top: 0;
+}
+.mainTitle {
+  position: relative;
+  color: $color_blue;
+  font-weight: 700;
+  font-size: 120px;
+  padding-top: 170px;
+  line-height: 110px;
+  text-align: center;
+}
+.title {
+   width: 48%;
+   margin: 0 auto;
+
+  & p{
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  & h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-size: 1.5rem;
+  }
+  & span{
+    font-weight: 700;
+  }
+}
+.scroll {
+  cursor:pointer;
+  & path{
+    background-size: 30px;
+    color: $color_blue;
+    fill: currentColor;
+  }
+  & :hover{
+    transform: translateY(2vh);
+    transition: all ease-in-out 0.3s;
+  }
+}
+

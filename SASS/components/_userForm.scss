@@ -1,0 +1,119 @@
+@import "../base/variables";
+/* Form frame view button START, form =============================*/
+
+.formFrame {
+  position: absolute;
+  margin: 0 auto;
+  min-width: 100vw;
+  min-height: 110vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+#userForm{
+  margin: 0 auto;
+  width: 80vh;
+  height: 100vh;
+  overflow: hidden;
+  padding: 30vh 55px 10px 55px;
+  color: $color_blue;
+}
+.formBox{
+  width: 100%;
+}
+.formTitle{
+  display: block;
+  font-size: 3rem;
+  color: $color-blue;
+  line-height: 1.4;
+  text-align: center;
+  padding-bottom: 5vh;
+}
+/*inputs ==========*/
+.formNameInput {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  border-bottom: 2px solid $color-medium-grey;
+  margin-bottom: 30px;
+
+}
+.input1 {
+  display: block;
+  height: 7vh;
+  font-size: 1.8rem;
+  text-align: center;
+  color: $color-light-grey;
+  background-color: $color-dark-blue;
+  border: none;
+  outline: 0;
+  transition: all 0.5s;
+}
+.focus-input1 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+  padding-top: -20px;
+}
+
+.focus-input1:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+
+  background: rgba(219,21,99,1);
+  background: -webkit-linear-gradient(45deg, #d5007d, #e53935);
+  background: -o-linear-gradient(45deg, #d5007d, #e53935);
+  background: -moz-linear-gradient(45deg, #d5007d, #e53935);
+  background: linear-gradient(45deg, #d5007d, #e53935);
+}
+
+
+.input1:focus + .focus-input1:before {
+  width: 100%;
+}
+.input1:focus + .focus-input1 p {
+  transform: translateY(-1.5vh);
+  transition: all 0.6s;
+}
+
+.start {
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btnLink {
+    display: block;
+  }
+
+  .btnStart {
+    position: relative;
+    border: 1px $color-blue solid;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.1);
+    color: $color-blue;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    transition: all 0.4s;
+    padding: 3vh 5vw;
+  }
+  .btnStart:hover{
+    font-weight: 700;
+    color: $color-light-grey;
+    font-size: 1.1rem;
+  }

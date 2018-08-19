@@ -1,0 +1,30 @@
+.backgroundFrame{
+  width: 90vw;
+  height: 80vh;
+  margin: 0 auto;
+  background: rgba(0, 0, 18, 0.9);
+  box-shadow: -7px 2px 50px 3px rgba(0,0,0,0.75);
+  color: white;
+  text-align: center;
+  z-index: 0;
+  top: 0;
+}
+#backgroundVideo {
+  min-height: 100vh;
+  width: 100vw;
+  float: left;
+  top:0;
+  position: absolute;
+  z-index:-14;
+}
+.backgroundText {
+  z-index: -2;
+  font-size: 70rem;
+  float: top;
+  top:0;
+  position: absolute;
+  color: rgba(0,0,26,1);
+  font-weight: 700;
+
+}
+//rgba(0, 0, 18, 0.9);

@@ -1,0 +1,19 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-dark-blue;
+  font-family: 'Rajdhani', sans-serif;
+  color: $color-white;
+
+}
+.backgroundMain{
+  right: 0;
+  min-width: 100%;
+  min-height: 220%;
+}

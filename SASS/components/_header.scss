@@ -1,0 +1,26 @@
+/* LOGO ==============================*/
+
+.logoConatiner{
+  width: 90vw;
+  height: 9vh;
+  margin: 0 auto;
+  top: 0;
+}
+.logo{
+  color: $color_blue;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 2.2vh;
+  margin-bottom: 20px;
+  line-height: 25px;
+  float: left;
+}
+.signature {
+  float: right;
+  padding-top: 6vh;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  & strong {
+    color: $color-blue;
+  }
+}
