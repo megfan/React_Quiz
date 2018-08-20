@@ -11,7 +11,6 @@ export default class Result extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.state);
 
         fetch('http://localhost:3000/results', {
             method: 'POST',

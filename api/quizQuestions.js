@@ -1,10 +1,5 @@
 var quizQuestions = [
     {
-        question: "Which of the following is not a Composition Events?",
-        answers: ['onCompositionUpdate','onCompositionStart','onCompositionEnd','onCompositionStop'],
-        correct: 3
-    },
-    {
         question: "What kind of application architecture is widely used together with React JS?",
         answers: ["Flux","Flux with MVC","MVC","Singleton"],
         correct: 1

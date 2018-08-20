@@ -8,12 +8,12 @@ class HandleResult extends React.Component {
     }
 
     render() {
-        if(this.props.result <= '3'){
+        if(this.props.result <= '10'){
             return (
                 <h1> It could be better <strong>{this.props.name}</strong>.<br/>
                     You should try again!</h1>
             )
-        }if(this.props.result > '3' &&  this.props.result <= '5'){
+        }if(this.props.result > '10' &&  this.props.result <= '16'){
             return (
                 <h1> Weel done <strong>{this.props.name}</strong>.<br/>
                     You are quite good with React!</h1>
@@ -51,9 +51,6 @@ export default class ResultList extends React.Component {
         })
             .then(res => res.json())
             .then(data => {
-
-                // const myObj = JSON.parse(data[0]);
-                console.log(data);
                 this.setState({
                     name: data[data.length -1].name,
                     age: data[data.length -1].age,
@@ -68,20 +65,16 @@ export default class ResultList extends React.Component {
           })
             .then(res => res.json())
             .then(data => {
-
-                console.log(data);
                 this.setState({
                     results: data,
             })
-        })
+        });
 
         fetch('http://localhost:3000/times', {
         method: 'GET',
         })
         .then(res => res.json())
             .then(data => {
-
-                console.log(data);
                 this.setState({
                     times: data,
             })
@@ -94,7 +87,6 @@ export default class ResultList extends React.Component {
                 <p> Loading... </p>
             )
         }
-
         return (
             <div>
                 <div className='resultUserData'>

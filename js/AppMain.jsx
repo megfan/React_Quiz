@@ -57,7 +57,6 @@ class AppQuiz extends React.Component{
         return(
             <div>
                 <div className='backgroundFrame'><App /></div>
-                <div className='backgroundText'>REACT</div>
             </div>
         )
     }

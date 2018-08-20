@@ -11,9 +11,13 @@ export default class FormUser extends React.Component{
             name: '',
             age: '',
             id: 0,
+            error: ''
         }
-    }
+    };
     handleNameChange = (e) => {
+        this.setState({
+            name: ""
+        });
         this.setState({
             name: e.target.value
         });
@@ -26,7 +30,6 @@ export default class FormUser extends React.Component{
 
     submitForm = (e) => {
         e.preventDefault();
-        console.log(this.state)
 
         fetch('http://localhost:3000/users', {
             method: 'POST',
@@ -36,8 +39,14 @@ export default class FormUser extends React.Component{
             },
             body: JSON.stringify(this.state)
         })
-    }
+    };
 
+    errorInput = () => {
+
+        this.setState({
+            error: 'Please write your name and age',
+        })
+    };
 
     render(){
         return(
@@ -57,9 +66,14 @@ export default class FormUser extends React.Component{
                     <span className="focus-input1" ><p>AGE</p></span>
                 </div>
                 <div className="formSubmitBtn">
+                    <div className='errorInput'>{this.state.error}</div>
                     <div className='start' onClick={this.submitForm}>
-                        <Link className="btnLink" to='/app'><button
-                            className='btnStart'>START</button></Link>
+                        {this.state.name && this.state.age !== ""
+                        ? <Link className="btnLink" to='/app'><button
+                                className='btnStart'>START</button></Link>
+                        :<button className='btnStart' onClick={this.errorInput}>START</button>
+                        }
+
                     </div>
                 </div>
             </form>

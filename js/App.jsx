@@ -26,29 +26,24 @@ export default class App extends React.Component {
     }
 
     CheckAnswer = (e) => {
-
         this.setState({
             answer: e.currentTarget.value
         });
-
         if(this.state.correct === e.currentTarget.value){
             this.setState({
                 result: this.state.result + 1
             });
-            console.log('dobrze' + e.currentTarget.value + "wynik" + this.state.result)
-        }else{
-            console.log('zle'+ e.currentTarget.value + "wynik" + this.state.result);
         }
-        this.setNextQuestion(e);
+        if(this.state.questionId <= 20) {
+            this.setNextQuestion(e);
+        }
     };
 
     setNextQuestion = () => {
-
         const counter = this.state.answerCounter += 1;
         const questionId = this.state.questionId += 1;
 
-        // if(!this.state.questionId === this.state.question.length) {
-
+        if(this.state.questionId <= 20) {
             this.setState({
                 answersCounter: counter,
                 questionId: questionId,
@@ -56,7 +51,7 @@ export default class App extends React.Component {
                 answerOptions: quizQuestions[counter].answers,
                 correct: quizQuestions[counter].correct
             });
-        // }
+        }
     };
 
     renderQuiz () {
