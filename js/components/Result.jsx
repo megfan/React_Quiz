@@ -19,8 +19,8 @@ export default class Result extends React.Component {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(this.state)
-    })
-}
+        })
+    }
 
     render() {
         return (

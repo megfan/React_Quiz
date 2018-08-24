@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppMain from './AppMain.jsx';
+import AppMain from './Creator.jsx';
 
 import '../SASS/main.scss';
 

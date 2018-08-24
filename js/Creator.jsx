@@ -1,7 +1,7 @@
 import React from 'react';
 import App from './App.jsx';
 import BackgroundFrame from './MainComponents/BackgroundFrame.jsx';
-import FormUser from './MainComponents/FormUser.jsx';
+import FormUser from './MainComponents/UserForm.jsx';
 import * as Scroll from "react-scroll/modules/index";
 import movie from '../video/movie.mov';
 
