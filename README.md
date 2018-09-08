@@ -1,7 +1,8 @@
 # ReactQuiz
 A multiple choice quiz with React about react made as a final project at CodersLab bootcamp.
 
-    View Demo: https://megfan.github.io
+View Demo:
+[React Quiz](https://megfan.github.io)
 
 Getting Started
 
