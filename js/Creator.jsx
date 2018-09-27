@@ -3,7 +3,8 @@ import App from './App.jsx';
 import BackgroundFrame from './MainComponents/BackgroundFrame.jsx';
 import FormUser from './MainComponents/UserForm.jsx';
 import * as Scroll from "react-scroll/modules/index";
-import movie from '../video/movie.mov';
+import movieMOV from '../video/movieMOV.mov';
+import movieMP4 from '../video/movieMP4.mp4';
 
     import {
         HashRouter,
@@ -38,7 +39,9 @@ class Main extends React.Component{
             <div className='backgroundMain'>
                 <BackgroundFrame />
                 <video ref='video' id='backgroundVideo'  loop autoPlay >
-                    <source src={movie} type='video/mp4'/>
+                    <source src={movieMP4} type='video/mp4'/>
+                    <source src={movieMP4} type='video/ogg'/>
+                    <source src={movieMOV} type='video/mov'/>
                 </video>
                 <div className='formFrame'>
                     <FormUser/>

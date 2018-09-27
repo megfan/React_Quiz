@@ -1,10 +1,20 @@
 # ReactQuiz
 A multiple choice quiz with React about react made as a final project at CodersLab bootcamp.
+It contains 20 questions about Java Script and React.
 
-View Demo:
+## View Demo:
 [React Quiz](https://megfan.github.io)
 
-Getting Started
+## Built With
+
+* React
+* React Router
+* React Transition Group
+* API Fetching
+* Sass
+* animateScroll
+
+## Getting Started
 
     $ git clone https://github.com/davidrayoussef/react-quiz.git
     
@@ -14,9 +24,9 @@ Getting Started
     
     $ npm start
 
+### What needs to be done: Firebase connection
 
-
-App Structure:
+### App Structure:
 
         Main
         └── Creator
@@ -31,3 +41,6 @@ App Structure:
             ├── UserForm
             └── BackgroundFrame
 
+## Authors
+
+* **Margaret Staszewska**
