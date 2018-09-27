@@ -44,3 +44,5 @@ It contains 20 questions about Java Script and React.
 ## Authors
 
 * **Margaret Staszewska**
+
+![screenshot-localhost-8080-2018 09 27-14-38-30](https://user-images.githubusercontent.com/35031023/46164651-de912980-c28e-11e8-84f0-abfe8055b038.png)
