@@ -1,5 +1,5 @@
 # ReactQuiz
-A multiple choice quiz with React about react made as a final project at CodersLab bootcamp.
+A multiple choice quiz made in ReactJS as a final project at Coders Lab bootcamp.
 It contains 20 questions about Java Script and React.
 
 ## View Demo:
@@ -7,7 +7,7 @@ It contains 20 questions about Java Script and React.
 
 ## Built With
 
-* React
+* ReactJS
 * React Router
 * React Transition Group
 * API Fetching
