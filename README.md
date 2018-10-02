@@ -3,7 +3,7 @@ A multiple choice quiz made in ReactJS as a final project at Coders Lab bootcamp
 It contains 20 questions about Java Script and React.
 
 ## View Demo:
-[React Quiz](https://megfan.github.io)
+[React Quiz](https://megfan.github.io/React_Quiz/)
 
 ## Built With
 
